@@ -1,0 +1,94 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    background: rgba(240, 239, 243);
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* width */
+::-webkit-scrollbar {
+    
+    width: 5px;
+    border-radius: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: #f1f1f1;
+    
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.container{
+    width: 375px;
+    height: 520px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.container form{
+    width: 100%;
+    border: 2px solid rgb(83, 74, 235);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container form input{
+    box-shadow: 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+    
+}
+.container form i {padding-left: 10px;}
+
+.product{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.product img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.product .p-details{
+    padding-left: 15px;
+}
+.product .p-details h2{
+    font-size: 20px;
+    color: #1d1d1d;
+
+}
+.product .p-details p {
+    font-size: 18px;
+    color: #1d1d1d;
+    font-weight: 600;
+
+}
